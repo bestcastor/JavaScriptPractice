@@ -7,7 +7,7 @@ p {
     color: cornflowerblue;
     border: 5px solid powderblue;
     padding: 30px;
-    margin: 100px;
+    margin: 1px;
 }
 
 p.error {
@@ -17,4 +17,53 @@ p.error {
 #p01 {
     color: aqua;
     border:7px solid yellowgreen;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
 }

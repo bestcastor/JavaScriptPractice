@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>YNNPractice</title>
+	<meta charset="UTF-8">
+	<title>YNNPractice</title>
 </head>
 <body style="background-color:#e3e0e6;font-family:verdana;">
-    <h1>Lesson 1</h1>
-	<h1 style="font-size:50px;text-align:center;">Lesson h1</h1>
-    <p style="color:hotpink;"><b>Can you see me? <br> MY name is YuNannan! I love my kids!</b></p>
-        <button style="color:royalblue;">Click me</button>
-	
-	<hr>
-    <p style="background-color:powderblue;" title ="List of my drinks"> Drinks:
-	<ul style="color:brown;background: aquamarine">
-        <li style="font-size:200%;">Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    </p>
+<h1>Lesson 1</h1>
+<h1 style="font-size:50px;text-align:center;">Lesson h1</h1>
 
-	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-	<p>Here is a quote from WWF's website:</p>
-	<blockquote cite="http://www.worldwildlife.org/who/index.html">
-		For 50 years, WWF has been protecting the future of nature.
-		The world's leading conservation organization,
-		WWF works in 100 countries and is supported by
-		1.2 million members in the United States and
-		close to 5 million globally.
-	</blockquote>
+<h1>My First Google Map</h1>
 
-	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
 
-	<address>
-		Written by John Doe.<br>
-		Visit us at:<br>
-		Example.com<br>
-		Box 564, Disneyland<br>
-		USA
-	</address>
+<script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+</script>
 
-	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF6xwHWcTFq93talnSLNxv4enziKBuEeU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
-	<bdo dir="rtl">This text will be written from right to left</bdo>
-	
-	<hr>
-	<h4 style="background-color:Tomato;">Tomato</h4>
-	<h4 style="background-color:Orange;">Orange</h4>
-	<h4 style="background-color:DodgerBlue;">DodgerBlue</h4>
-	<h4 style="background-color:MediumSeaGreen;">MediumSeaGreen</h4>
-	<h4 style="background-color:Gray;">Gray</h4>
-	<h4 style="background-color:SlateBlue;">SlateBlue</h4>
-	<h4 style="background-color:Violet;">Violet</h4>
-	<h4 style="background-color:LightGray;">LightGray</h4>
-	<h3 style="border:5px solid Tomato;">Hello World</h3>
-	<h3 style="border:6px solid DodgerBlue;">Hello World</h3>
-	<h3 style="border:7px solid Violet;">Hello World</h3>
+<p style="color:hotpink;"><b>Can you see me? <br> MY name is YuNannan! I love my kids!</b>
+	<button style="color:royalblue;">Click me</button>
+	<a href="/site/index.html">site page</a>
+</p>
 
-	<hr>
-	<p style="font-size:40px">Text Format</p>
-	<p><b>This text is bold</b></p>
-	<p><i>This text is italic</i></p>
-	<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-	<p><strong>This is strong message!</strong></p>
-	<p><em>this is em text</em></p>
-	<p><mark>This is mark text.</mark></p>
-	<p><del>this is del text</del></p>
-	<p><ins>This is ins text.</ins></p>
-	<p><small>this is small text.</small></p>
+<hr>
 
-	<hr>
+<p style="background-color:powderblue;" title="List of my drinks"> Drinks:
+<ul style="color:brown;background: aquamarine;list-style-type:circle">
+	<li style="font-size:200%;">Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ul>
+<ol type="1">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
+</ol>
+</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+	For 50 years, WWF has been protecting the future of nature.
+	The world's leading conservation organization,
+	WWF works in 100 countries and is supported by
+	1.2 million members in the United States and
+	close to 5 million globally.
+</blockquote>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<address>
+	Written by John Doe.<br>
+	Visit us at:<br>
+	Example.com<br>
+	Box 564, Disneyland<br>
+	USA
+</address>
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+<hr>
+<h4 id="h4-tomato" style="background-color:Tomato;">Tomato</h4>
+<h4 style="background-color:Orange;">Orange</h4>
+<h4 style="background-color:DodgerBlue;">DodgerBlue</h4>
+<h4 style="background-color:MediumSeaGreen;">MediumSeaGreen</h4>
+<h4 style="background-color:Gray;">Gray</h4>
+<h4 style="background-color:SlateBlue;">SlateBlue</h4>
+<h4 style="background-color:Violet;">Violet</h4>
+<h4 style="background-color:LightGray;">LightGray</h4>
+<h3 style="border:5px solid Tomato;">Hello World</h3>
+<h3 style="border:6px solid DodgerBlue;">Hello World</h3>
+<h3 style="border:7px solid Violet;">Hello World</h3>
+
+<hr>
+<p style="font-size:40px">Text Format</p>
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+<p><strong>This is strong message!</strong></p>
+<p><em>this is em text</em></p>
+<p>
+	<mark>This is mark text.</mark>
+</p>
+<p>
+	<del>this is del text</del>
+</p>
+<p>
+	<ins>This is ins text.</ins>
+</p>
+<p>
+	<small>this is small text.</small>
+</p>
+
+<hr>
 <p><a href="https://www.w3schools.com">This is a link</a>
 </p>
 

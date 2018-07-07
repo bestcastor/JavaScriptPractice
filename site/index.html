@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>sub-page</title>
-    <link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8">
+	<title>sub-page</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link ref="icon" href="pic_bulbon.gif" type="image/x-icon">
 </head>
 <body>
-    <h1>This is a heading? NN</h1>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <p id="p01">Check this one!</p>
-    <p class="error">I am error</p>
+<script>
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "pic_bulboff.gif"
+        } else {
+            pic = "pic_bulbon.gif"
+        }
+        document.getElementById('myImage').src = pic;
+    }
+</script>
+<p>
+	<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+	
+	<button type="button" onclick="light(1)">Light On</button>
+	<button type="button" onclick="light(0)">Light Off</button>
+</p>
+<h1>This is a heading? NN</h1>
+<p>This is a paragraph.</p>
+<p id="p01">Check this one!</p>
+<p class="error">I am error</p>
+
+<hr>
+<p><a href="https://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial</a></p>
+<p>
+	<button onclick="imgLarger()">+</button>
+	<button onclick="imgSmaller()">-</button>
+</p>
+<p><img id="img1" src="../img.jpg " alt="img missing" style="width:62px;height:34px;border:0;" title="Click me?">
+<p><a href="../index.html#h4-tomato">header-tomato</a></p>
+<script>
+    function imgLarger() {
+        var imgDom = document.getElementById('img1');
+        var imgDomWidth = imgDom.style.width;
+        var imgDomHeight = imgDom.style.height;
+        imgDom.style.width = parseInt(imgDomWidth) * 2 + 'px';
+        imgDom.style.height = parseInt(imgDomHeight) * 2 + 'px';
+    }
+
+    function imgSmaller() {
+        var imgDom = document.getElementById('img1');
+        var imgDomWidth = imgDom.style.width;
+        var imgDomHeight = imgDom.style.height;
+        imgDom.style.width = parseInt(imgDomWidth) / 2 + 'px';
+        imgDom.style.height = parseInt(imgDomHeight) / 2 + 'px';
+
+    }
+</script>
+<hr>
+<table id="t01" style="width:100%">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>Jill</td>
+		<td>Smith</td>
+		<td>50</td>
+	</tr>
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	</tr>
+</table>
+
+<table style="width:100%">
+	<caption>Monthly savings</caption>
+	<tr>
+		<th>Name</th>
+		<th colspan="2">Telephone</th>
+	</tr>
+	<tr>
+		<td>Bill Gates</td>
+		<td>55577854</td>
+		<td>55577855</td>
+	</tr>
+</table>
+
+<table style="width:100%">
+	<tr>
+		<th>Name:</th>
+		<td>Bill Gates</td>
+	</tr>
+	<tr>
+		<th rowspan="2">Telephone:</th>
+		<td>55577854</td>
+	</tr>
+	<tr>
+		<td>55577855</td>
+	</tr>
+</table>
 </body>
 </html>
